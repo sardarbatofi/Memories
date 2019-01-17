@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
 
     var numClick = 0;
@@ -25,6 +25,16 @@
       cards [9] = 'wonderw.jpg';
       cards [10] = 'Flash.jpg';
       cards [11] = 'hulken.jpg';
+      /*Räknar antal klick*/    
+    $(function(){
+      var count = 0;
+      
+
+// Check for click event on target photo. Increment count and display new count.
+      $(".imgOnClick").click(function() {
+          count++;
+         $("#countClick").html("Number of clicks is "+count);
+        });
 
       function shuffle(array)
        {
@@ -99,29 +109,30 @@
     <CENTER>
       <h1>Memory Game</h1>
       <br>
+      <div id="countClick"></div>
       <table bordercolor="red">
-        <tr>
-          <td><img src="alla.jpg" onclick="choose(0)" /></td>
-          <td><img src="alla.jpg" onclick="choose(1)" /></td>
-          <td><img src="alla.jpg" onclick="choose(2)" /></td>
+         <tr>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(0)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(1)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(2)" /></td>
         </tr>
         <br>
         <tr>
-          <td><img src="alla.jpg" onclick="choose(3)" /></td>
-          <td><img src="alla.jpg" onclick="choose(4)" /></td>
-          <td><img src="alla.jpg" onclick="choose(5)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(3)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(4)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(5)" /></td>
         </tr>
         <br>
         <tr>
-          <td><img src="alla.jpg" onclick="choose(6)" /></td>
-          <td><img src="alla.jpg" onclick="choose(7)" /></td>
-          <td><img src="alla.jpg" onclick="choose(8)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(6)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(7)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(8)" /></td>
         </tr>
         <br>
         <tr>
-          <td><img src="alla.jpg" onclick="choose(9)" /></td>
-          <td><img src="alla.jpg" onclick="choose(10)" /></td>
-          <td><img src="alla.jpg" onclick="choose(11)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(9)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(10)" /></td>
+          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(11)" /></td>
         </tr>
       </table>
     </CENTER>
