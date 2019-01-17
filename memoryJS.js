@@ -17,17 +17,18 @@
     cards [10] = 'Flash.jpg';
     cards [11] = 'hulken.jpg';
 
-      /*Räknar antal klick*/
-    $(function()
-    {
+    /*Räknar antal klick*/    
+  $(function(){
       var count = 0;
-});
+      
 
 // Check for click event on target photo. Increment count and display new count.
       $(".imgOnClick").click(function() {
           count++;
          $("#countClick").html("Number of clicks is "+count);
         });
+    
+  });
 
 
 
