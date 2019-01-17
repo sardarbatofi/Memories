@@ -17,9 +17,10 @@
     cards [10] = 'Flash.jpg';
     cards [11] = 'hulken.jpg';
 
-//vi lägger alla bilder i en array, vi har 6 olika bilder
-    function newGame(){
 
+
+
+    function newGame(){
       window.location.reload();
     }
     /*Räknar antal klick*/
@@ -35,12 +36,30 @@
 
   });
 
+
+
+      function shuffle(array)
+       {
+        var currentIndex = array.length, temoraryValue, randomIndex;
+        while (0 !== currentIndex)
+        {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+          temoraryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temoraryValue;
+        }
+        return array;
+      }
+
       var s;
       s = shuffle(cards);
+      // den här functionen blir called när vi klickar på korten
       function choose(card)
       {
 
         if (numClick == 0) {
+        //här sätter vi bilden vi klickar på
         first = card;
         document.images[card].src = cards[card];
         numClick = 1;
@@ -51,20 +70,25 @@
         numClick = 2;
         second = card;
         document.images[card].src = cards[card];
-        timer = setInterval(control, 500); // timer för att vända korten
+        // en halv secund innan kortet vänds
+        timer = setInterval(control, 500);
       }
       else {
+        //bara 2 bilder kommer att visas förens de flippar
         alert("IMG ONCE");
       }
     }
+    //här är det vi gör det faktiska "Match"
     function control()
     {
       clearInterval(timer);
       numClick = 0;
       if (cards[second] == cards[first])
       {
+        //om det första kortet är lika med det andra
         match++;
         if (match == 6) {
+          //visas bakcgrundsfärgen grön och nytt spel knappen
           document.getElementById('newGameBtn').style.display = 'inline';
           document.getElementById('container').style.backgroundColor = 'green';
 
