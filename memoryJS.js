@@ -5,17 +5,32 @@
     var match = 0;
     var cards = [];
     cards [0] = 'superm.jpg';
-      cards [1] = 'batm.jpg';
-      cards [2] = 'spiderm.jpg';
-      cards [3] = 'spiderm.jpg';
-      cards [4] = 'superm.jpg';
-      cards [5] = 'batm.jpg';
-      cards [6] = 'Flash.jpg';
-      cards [7] = 'hulken.jpg';
-      cards [8] = 'wonderw.jpg';
-      cards [9] = 'wonderw.jpg';
-      cards [10] = 'Flash.jpg';
-      cards [11] = 'hulken.jpg';
+    cards [1] = 'batm.jpg';
+    cards [2] = 'spiderm.jpg';
+    cards [3] = 'spiderm.jpg';
+    cards [4] = 'superm.jpg';
+    cards [5] = 'batm.jpg';
+    cards [6] = 'Flash.jpg';
+    cards [7] = 'hulken.jpg';
+    cards [8] = 'wonderw.jpg';
+    cards [9] = 'wonderw.jpg';
+    cards [10] = 'Flash.jpg';
+    cards [11] = 'hulken.jpg';
+
+      /*Räknar antal klick*/
+    $(function()
+    {
+      var count = 0;
+});
+
+// Check for click event on target photo. Increment count and display new count.
+      $(".imgOnClick").click(function() {
+          count++;
+         $("#countClick").html("Number of clicks is "+count);
+        });
+
+
+
       function shuffle(array)
        {
         var currentIndex = array.length, temoraryValue, randomIndex;
@@ -29,6 +44,7 @@
         }
         return array;
       }
+
       var s;
       s = shuffle(cards);
       function choose(card)
