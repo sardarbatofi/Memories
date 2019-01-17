@@ -19,7 +19,7 @@
 
 //vi lägger alla bilder i en array, vi har 6 olika bilder
     function newGame(){
-      
+
       window.location.reload();
     }
     /*Räknar antal klick*/
@@ -34,29 +34,6 @@
         });
 
   });
-
-
-//här shufflar vi arrayen men hjälp av shuffle algorithm Fisher-Yates
-      function shuffle(array)
-       {
-        var currentIndex = array.length, temoraryValue, randomIndex;
-
-// Medan det fortfarande finns element att blanda ...
-        while (0 !== currentIndex)
-        {
-
-// Välj ett återstående element ...
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex -= 1;
-
-
-// och byt ut det med det aktuella elementet.
-          temoraryValue = array[currentIndex];
-          array[currentIndex] = array[randomIndex];
-          array[randomIndex] = temoraryValue;
-        }
-        return array;
-      }
 
       var s;
       s = shuffle(cards);
