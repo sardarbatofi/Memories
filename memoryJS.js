@@ -17,17 +17,21 @@
     cards [10] = 'Flash.jpg';
     cards [11] = 'hulken.jpg';
 
-    /*Räknar antal klick*/    
+
+    function newGame(){
+      window.location.reload();
+    }
+    /*Räknar antal klick*/
   $(function(){
       var count = 0;
-      
+
 
 // Check for click event on target photo. Increment count and display new count.
       $(".imgOnClick").click(function() {
           count++;
          $("#countClick").html("Number of clicks is "+count);
         });
-    
+
   });
 
 
@@ -50,10 +54,12 @@
       s = shuffle(cards);
       function choose(card)
       {
+
         if (numClick == 0) {
         first = card;
         document.images[card].src = cards[card];
         numClick = 1;
+        document.getElementById('newGameBtn').style.display = 'none';
       }
       else if (numClick == 1)
       {
@@ -74,8 +80,10 @@
       {
         match++;
         if (match == 6) {
-          alert("Winner");
-          location.reload();
+          document.getElementById('newGameBtn').style.display = 'inline';
+          document.getElementById('container').style.backgroundColor = 'green';
+
+
         }
       }
       else {
