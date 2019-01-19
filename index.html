@@ -1,83 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-
-div.background {
-  background-image: url("header.jpg");
-  background-size: cover;
-  border: 2px solid black;
-  text-align: center;
-}
-
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-}
-
-.main {
-
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.8;
-  text-align: center;
-  padding: 20px;
-}
-
-.menu {
-  text-align: center;
-
-}
-
-#btn {
-
-margin: 20px;
-color: green;
-height: 40px;
-border-radius: 50%;
-background-color: lightblue;
-opacity: 0.9;
-
-}
-
-a {
-  text-decoration: none;
-}
-
-</style>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-
-  <div class="background">
-    <div class="transbox">
-  <h1>MEMORY GAME</h1>
-</div>
+<body background="header.jpg">
 
 
-<div>
-  <div class="menu">
-    <button id="btn"><a href="memory.html">PLAY GAME</a> </button>
-  </div>
+   
 
-  <div class="main">
-    <h2>RULES:</h2>
-    <p>You reveals two cards if they match, he wins otherwise he hides again and so on ...
-       The aim of the game is to try to memorize the location of different cards and when the you put face up successively two identical cards forming the pair you wins them.
-       The game is over when all pairs were found.</p>
-  </div>
-</div>
-</div>
+	<div class=" container"> 
+	  <div class="transbox">
+	    
+	    	 <h1 class="index-h1">Super Memory</h1>
+
+  			<div class="main">
+    			<h2 class="aGame">A memory card Game</h2>
+    				<p>
+    				<span class="intro">Where</span> you reveals two cards if they match, you wins otherwise the cards hides again and so on ...</p>
+
+    				<p>
+       				The aim of the game is to try to memorize the location of different cards and when the you put face up successively two identical cards forming the pair you wins them.
+      	   			 The game is over when all pairs were found.
+      	   			</p>
+  			</div>
+  				
+  			<div class="menu">
+    			<button id="btn"><a href="memory.html">PLAY GAME</a> </button>
+  			</div>
+
+		</div>
+	</div>
 
 </body>
 </html>

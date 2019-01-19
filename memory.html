@@ -3,19 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="memoryJS.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="memoryJS.js"></script>
+
+
+
+        <!--Timmer inte fixad
+        <script type="text/javascript">
+               var counter = 0
+                var timer;
+                function countUP () {
+                counter = counter + 1;//increment the counter by 1
+ //display the new value in the div
+                        document.getElementById("timer_container").innerHTML = counter;
+            }
+</script>-->
+
   </head>
+  <!--  'timer=setInterval("countUP()", 1000 );' i body efter id containter-->
   <body id="container">
     <CENTER>
-      <h1>Memory Game</h1>
+      <h1 class="secondmem">Super Memory</h1>
       <br>
       <form method="get" action="index.html">
-        <button type="submit">Rules</button>
+        <button class="home "type="submit">Home</button>
+        <button id="newGameBtn"  onclick="newGame()">New Game</button>
     </form>
      <br>
-     <button id="newGameBtn" onclick="newGame()">NYTT SPEL</button>
+     
       <div id="countClick"></div>
+
+      <!-- Timmer
+        <div id="timer_container">0</div>-->
 
       <table bordercolor="red">
          <tr>
@@ -46,23 +67,6 @@
 
   </body>
 
-  <style>
-
-img {
-
-height: 150px;
-width: 172px;
-}
-
-td {
-border: 7px solid lightblue;
-}
-
-#container {
-  background-color: blue;
-}
-
-  </style>
 
 
 </html>

@@ -16,7 +16,8 @@
     cards [9] = 'wonderw.jpg';
     cards [10] = 'Flash.jpg';
     cards [11] = 'hulken.jpg';
-
+  
+  
 
 
 
@@ -26,14 +27,17 @@
     /*Räknar antal klick*/
   $(function(){
       var count = 0;
+      var mySpan=document.createElement('span');
+
 
 
 // Check for click event on target photo. Increment count and display new count.
       $(".imgOnClick").click(function() {
           count++;
-         $("#countClick").html("Number of clicks is "+count);
+         $("#countClick").html("Number of clicks:"+count); 
+       
         });
-
+     
   });
 
 
@@ -63,7 +67,7 @@
         first = card;
         document.images[card].src = cards[card];
         numClick = 1;
-        document.getElementById('newGameBtn').style.display = 'none';
+        //document.getElementById('newGameBtn').style.display = 'none';
       }
       else if (numClick == 1)
       {
