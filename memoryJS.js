@@ -27,7 +27,7 @@
     /*Räknar antal klick*/
   $(function(){
       var count = 0;
-      var mySpan=document.createElement('span');
+     
 
 
 
@@ -92,9 +92,9 @@
         //om det första kortet är lika med det andra
         match++;
         if (match == 6) {
-          //visas bakcgrundsfärgen grön och nytt spel knappen
-          document.getElementById('newGameBtn').style.display = 'inline';
-          document.getElementById('container').style.backgroundColor = 'green';
+         var popup = document.getElementById("myPopup");
+         popup.classList.toggle("show");
+         $("#clicks").html("Number of clicks:"+count); 
 
 
         }
