@@ -1,19 +1,12 @@
-body{
- font-family: "Gill Sans", sans-serif;
 
-}
 
-div.transbox { 
-  background-color: #ffffff;
-  opacity: 0.8;
- 
-}
+
 
 div.transbox p {
+     margin: 5%;
     font-weight: bold;
     color: #000000;
     font-size: 18px;
-    padding-top: 15%;
 }
 
 h1.index-h1 {
@@ -37,10 +30,10 @@ h1.index-h1 {
 }
 
 h2.aGame {
-    margin-left: -2%;
-    margin-bottom: -16%;
+  
+    margin-left: -53%;
+    margin-bottom: -6%;
     color: red;
-    padding-top: 59px;
 }
 
 .menu {
@@ -141,8 +134,9 @@ button#newGameBtn:hover {
 }
 
 img {
-     height: 210px;
-    width: 200px
+
+height: 150px;
+width: 172px;
 }
 
 td {
@@ -160,7 +154,7 @@ border: 7px solid lightblue;
   -ms-user-select: none;
   user-select: none;
     margin: auto 0;
-        padding: 1% 1% 1% 1%;
+    padding: 97% 16% 95% 85%;
     /* width: 91%; */
 
 }
@@ -215,46 +209,38 @@ border: 7px solid lightblue;
 
 
 
+@media only screen and (max-width: 812px) {
+
+  /*Första sidan*/
 
 
 
-
-
-
-/*Iphone 5*/
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-
-.container {
+  .container {
     width: 97%;
     padding: 1% 1% 1% 1%;
     }
 
    
 
-.transbox {
-  background-color: #ffffff;
-  opacity: 0.8;
-  height: 78vh;
- }
+    .transbox {
+        background-color: #ffffff;
+        opacity: 0.8;
+        height: 79vh;
+    }
 
     h1.index-h1 {
-    margin-left: 16%;
-    font-size: 23px;
-    padding: 7% 1% 4% 3%;
-}
+      margin-left: 27%;
+      font-size: 23px;
+      font-weight: bolder;
+      padding: 7% 1% 1% 1%;
+      }
 
    h2.aGame {
     margin-left: -12%;
     font-size: 18px;
     margin-bottom: -4%;
     color: red;
-    padding-top: 17px;
-}
+    }
 
     .menu {
       text-align: center;
@@ -263,118 +249,16 @@ border: 7px solid lightblue;
    
       }
 
-     img {
-    height: 54px;
-    width: 79px;
-   
-}
-
-  table {
-    margin-top: -36px;
-  }
-
-}
-
-
-
-/*Iphone 6*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-    .transbox {
-         height: 66vh;
-    }
-
-    img {
-          height: 69px;
-          width: 99px;
-        }
-
-
-
-
-
-}
-
-/*Iphone 6+*/
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-    .transbox {
-              height: 59vh;
-    }        
-
-    img {
-      height: 73px;
-      width: 108px;
-    }
-
-}
-
-/*Iphone iphonex*/
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-    .transbox {
-    height: 54vh;
-}
-
-}
-
-
-
-/*Ipad*/
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-    .transbox p {
-      font-weight: bold;
-      font-size: 18px;
-      padding-top: 7%;
-    }
-
-
-    h2.aGame {
-    padding-top: 4%;
-  }
-
-  table {
-    margin-top: -43px;
-  }
-
-  img {
-    height: 77px;
-    width: 210px;
-  }
+      img {
+            height: 52px;
+              width: 96px;
+          }
 
 }
 
 
 
 
-/*Ipad pro*/
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 834px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
 
 
-    img {
-    height: 74px;
-    width: 259px;
-}
 
-}
