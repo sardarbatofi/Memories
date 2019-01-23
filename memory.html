@@ -1,79 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="memoryJS.js"></script>
-
-
-
-        <!--Timmer inte fixad
-        <script type="text/javascript">
-               var counter = 0
-                var timer;
-                function countUP () {
-                counter = counter + 1;//increment the counter by 1
- //display the new value in the div
-                        document.getElementById("timer_container").innerHTML = counter;
-            }
-</script>-->
-
+      <meta charset="utf-8">
+      <title>Supermemory</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="memoryJS.js"></script>
   </head>
-  <!--  'timer=setInterval("countUP()", 1000 );' i body efter id containter-->
+
+  <!--Här har vi en id på body som är conatiner, istället för extra div-->
   <body id="container">
-    <CENTER>
-      <h1 class="secondmem">Super Memory</h1>
-      <br>
-      <form method="get" action="index.html">
-        <button class="home "type="submit">Home</button>
-        <button id="newGameBtn"  onclick="newGame()">New Game</button>
-    </form>
-     <br>
+      <CENTER>
+         <h1 class="secondmem">Super Memory</h1>
+         <br>
+         <form>
+             <button class="home "type="submit"><a href="index.html">Home</a></button>   
+            <button id="newGameBtn" class="newGame"  onclick="newGame()">New Game</button>
+        </form> 
+    
+          <br>
 
-      <div id="countClick"></div>
+              <!--Antal click-->
+          <div id="count1" class="countClick"></div>
 
-      <!-- Timmer
-        <div id="timer_container">0</div>-->
+  
+         <table bordercolor="red">
+            <tr>
+                <td><img class="imgOnClick" src="alla.jpg" onclick="choose(0)" /></td>
+                <td><img class="imgOnClick" src="alla.jpg" onclick="choose(1)" /></td>
+                <td><img class="imgOnClick" src="alla.jpg" onclick="choose(2)" /></td>
+            </tr>
+            <br>
+            <tr>
+                <td><img class="imgOnClick" src="alla.jpg" onclick="choose(3)" /></td>
+                 <td><img class="imgOnClick" src="alla.jpg" onclick="choose(4)" /></td>
+                <td><img class="imgOnClick" src="alla.jpg" onclick="choose(5)" /></td>
+            </tr>
+            <br>
+            <tr>
+               <td><img class="imgOnClick" src="alla.jpg" onclick="choose(6)" /></td>
+               <td><img class="imgOnClick" src="alla.jpg" onclick="choose(7)" /></td>
+               <td><img class="imgOnClick" src="alla.jpg" onclick="choose(8)" /></td>
+            </tr>
+            <br>
+            <tr>
+               <td><img class="imgOnClick" src="alla.jpg" onclick="choose(9)" /></td>
+              <td><img class="imgOnClick" src="alla.jpg" onclick="choose(10)" /></td>
+              <td><img class="imgOnClick" src="alla.jpg" onclick="choose(11)" /></td>
+            </tr>
+        </table>
+      </CENTER>
 
-      <table bordercolor="red">
-         <tr>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(0)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(1)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(2)" /></td>
-        </tr>
-        <br>
-        <tr>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(3)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(4)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(5)" /></td>
-        </tr>
-        <br>
-        <tr>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(6)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(7)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(8)" /></td>
-        </tr>
-        <br>
-        <tr>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(9)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(10)" /></td>
-          <td><img class="imgOnClick" src="alla.jpg" onclick="choose(11)" /></td>
-        </tr>
-      </table>
-    </CENTER>
-
-  <div class="popup">
-      <h2> <span class="popuptext" id="myPopup">Congratulations!!</span></h2>
-      <p id="clicks"></p>
-
+      <div class="popup">
+          <h2> <span class="popuptext" id="myPopup">Congratulations!!</span></h2>
+          <div id="count2" class="countClick"></div>
+          <button id="newGameBtn" class="popup-newGame" onclick="newGame()">New Game</button>
+          <button class="home2 "type="submit"><a href="index.html">Home</a></button>       
       </div>
 
+       
 
 
-  </body>
+    </body>
+</html>
 
 
 

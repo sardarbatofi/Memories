@@ -24,20 +24,20 @@
     function newGame(){
       window.location.reload();
     }
+
+  
+
     /*Räknar antal klick*/
   $(function(){
       var count = 0;
 
-
-
-
 // Check for click event on target photo. Increment count and display new count.
       $(".imgOnClick").click(function() {
           count++;
-         $("#countClick").html("Number of clicks:"+count);
+         $(".countClick").html("Number of clicks:"+count);
 
         });
-
+   
   });
 
 
@@ -96,6 +96,14 @@
         //vad som händer när man få alla rätt
         match++;
         if (match == 6) {
+          $( "table" ).hide();
+          $( "#count1" ).hide();
+           $( ".newGame" ).hide();
+          $( ".home" ).hide();
+          $( ".home2" ).show();
+          $( ".popup-newGame" ).show();
+          $( "#count2" ).show();
+
          var popup = document.getElementById("myPopup");
          popup.classList.toggle("show");
 
