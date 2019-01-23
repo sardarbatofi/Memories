@@ -16,8 +16,8 @@
     cards [9] = 'wonderw.jpg';
     cards [10] = 'Flash.jpg';
     cards [11] = 'hulken.jpg';
-  
-  
+
+
 
 
 
@@ -27,17 +27,17 @@
     /*Räknar antal klick*/
   $(function(){
       var count = 0;
-     
+
 
 
 
 // Check for click event on target photo. Increment count and display new count.
       $(".imgOnClick").click(function() {
           count++;
-         $("#countClick").html("Number of clicks:"+count); 
-       
+         $("#countClick").html("Number of clicks:"+count);
+
         });
-     
+
   });
 
 
@@ -89,12 +89,16 @@
       numClick = 0;
       if (cards[second] == cards[first])
       {
-        //om det första kortet är lika med det andra
+        //det som gör så att korten försvinner
+        document.images[first].src = "svart.jpg";
+        document.images[second].src = "svart.jpg";
+
+        //vad som händer när man få alla rätt
         match++;
         if (match == 6) {
          var popup = document.getElementById("myPopup");
          popup.classList.toggle("show");
-         $("#clicks").html("Number of clicks:"+count); 
+
 
 
         }
