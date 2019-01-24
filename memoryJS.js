@@ -92,7 +92,7 @@
 
           //vad som händer när man få alla rätt
           match++;
-             if (match == 1) {
+             if (match == 6) {
                   $( "table" ).hide();
                   $( "#count1" ).hide();
                   $( ".newGame" ).hide();
