@@ -174,7 +174,7 @@ button#newGameBtn:hover {
 
 img {
   height: 210px;
-  width: 200px
+  width: 200px;
 }
 
 td {
@@ -384,7 +384,7 @@ td {
   {
 
     .transbox {
-      height: 54vh;
+      height: 80vh;
     }
 
     .popup{
