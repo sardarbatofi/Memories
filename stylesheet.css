@@ -149,7 +149,7 @@ button.home2 {
   font-size: 25px;
   color: #ffe500;
   display:none;
-  
+
 }
 
 .countClick {
@@ -303,24 +303,24 @@ td {
   #count2 {
     margin-top: -66%;
     margin-left: 34%;
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   button.home2 {
     width: 122px;
-    height: 36px; 
+    height: 36px;
     font-size: 13px;
     margin-top: -34%;
-    margin-left: 33%;    
+    margin-left: 33%;
   }
 
   .popup-newGame {
     width: 122px;
-    height: 36px;   
+    height: 36px;
     font-size: 13px;
     margin-top: -54%;
     margin-left: 33%;
-  
+
   }
 
 }
@@ -343,13 +343,13 @@ td {
         }
 
     #count2 {
-      margin-left: 36%;  
+      margin-left: 36%;
       margin-top:-70%;
     }
 
     button.home2 {
-      margin-left: 40%; 
-      margin-top:-40%;  
+      margin-left: 40%;
+      margin-top:-40%;
     }
 
     .popup-newGame {
@@ -379,7 +379,7 @@ td {
 
 /*Iphone iphonex*/
 @media only screen
-  and (min-width: 375px)
+  and (min-width: 320px)
   and (max-width: 812px)
   {
 
@@ -400,7 +400,7 @@ td {
     }
 
     button.home2 {
-          margin-top: -32%;  
+          margin-top: -32%;
     }
 
     .popup-newGame {
@@ -450,7 +450,7 @@ td {
 
       span#myPopup {
         font-size: 39px;
-      } 
+      }
 
       .popup {
         margin-top: 40%;
@@ -461,7 +461,7 @@ td {
       }
 
       button.home2 {
-        margin-top: -22%;  
+        margin-top: -22%;
       }
 
       .popup-newGame {
@@ -475,13 +475,13 @@ td {
 
 /*Ipad pro*/
 @media only screen
-  and (min-width: 1024px)
+  and (min-width: 1025px)
  {
 
 
     img {
           height: 95px;
-          width: 221px;        
+          width: 221px;
         }
 
     table {
@@ -497,13 +497,47 @@ td {
     }
 
     button.home2 {
-        margin-left: 47%; 
+        margin-left: 47%;
+        margin-top: -20%;
     }
 
-    .popup-newGame {     
-            margin-left: 47%;
+    .popup-newGame {
+            margin-left: 10%;
+            margin-top: -10%;
+
     }
 
 }
 
+@media only screen
+  and (min-width: 1280px)
+ {
 
+
+    img {
+          height: 195px;
+          width: 221px;
+        }
+
+    table {
+      margin-top: -2%;
+    }
+
+    span#myPopup {
+     font-size: 46px;
+    }
+
+    #count2 {
+      margin-left: 47%;
+    }
+
+    button.home2 {
+        margin-left: 51%;
+
+    }
+
+    .popup-newGame {
+            margin-left: 51%;
+    }
+
+}

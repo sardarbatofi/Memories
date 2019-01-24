@@ -51,7 +51,7 @@
 
       var s;
       s = shuffle(cards);
-      // den här functionen blir kallad när korten trycks 
+      // den här functionen blir kallad när korten trycks
       function choose(card)
         {
           if (numClick == 0) {
@@ -61,7 +61,7 @@
           numClick = 1;
           //document.getElementById('newGameBtn').style.display = 'none';
         }
-      
+
           else if (numClick == 1)
           {
              numClick = 2;
@@ -77,6 +77,8 @@
           }
       }
 
+
+
     //här är det vi gör det faktiska "Match"
     function control()
       {
@@ -90,7 +92,7 @@
 
           //vad som händer när man få alla rätt
           match++;
-             if (match == 6) {
+             if (match == 1) {
                   $( "table" ).hide();
                   $( "#count1" ).hide();
                   $( ".newGame" ).hide();
