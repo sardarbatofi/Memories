@@ -29,7 +29,7 @@
 // Kollar efter klick event på bilder, när en bild trycks så räknar counten.
       $(".imgOnClick").click(function() {
           count++;
-         $(".countClick").html("Number of clicks:"+count);
+         $(".countClick").html("Number of clicks: "+count);
 
         });
    });
@@ -92,7 +92,7 @@
 
           //vad som händer när man få alla rätt
           match++;
-             if (match == 1) {
+             if (match == 6) {
                   $( "table" ).hide();
                   $( "#count1" ).hide();
                   $( ".newGame" ).hide();
